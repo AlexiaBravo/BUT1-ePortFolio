@@ -1,0 +1,91 @@
+/*--------------------------------------------------------CSS de la page d'accueil-------------------------------------------------------------------*/
+
+/*********************************************************Début du menu déroulant*********************************************************************/
+
+#menu_deroulant {
+	/*Formation du menu déroulant*/
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	align-content: center;
+	padding: 15px;
+	background-color: black;
+	color: white;
+	border-radius: 15px;
+	margin-bottom: 25px;
+	font-size: 20px;
+	font-family: 'Playfair Display', serif;
+}
+
+#menu {
+	/*Mise en place du pointeur du curseur*/
+	cursor: pointer;
+}
+
+header h1 {
+	/*Titre de l'entête "Journal d'une parisienne...*/
+	font-family: 'Playfair Display', serif;
+	font-size: 50px;
+	color: lightgray;
+}
+
+/*************************************************************Fin du menu déroulant*******************************************************************/
+
+/*--------------------------------------------------------CSS de la page compétences-----------------------------------------------------------------*/
+
+#titre_competences {
+	/*Alignement titre des compétences*/
+	text-align: center;
+	border-bottom: 1px solid black;
+	padding-bottom: 5px;
+	justify-content: center;
+}
+
+#tab {
+	/*Tableau général*/
+	width: 60%;
+	margin: 50px 0 0 400px;
+	padding-left: 100px;
+	padding-top: 10px;
+
+}
+
+table {
+	/*Bord du tableau*/
+	border: 1px solid black;
+}
+
+td,
+th {
+	/*Bord tableau*/
+	border: 1px solid black;
+	width: 100px;
+}
+
+td {
+	/*Case tableau*/
+	text-align: center;
+	background-color: gray;
+	color: white;
+}
+
+th {
+	background-color: black;
+	/*Case tableau*/
+	color: lightgray;
+}
+
+#comp_info {
+	/*Alignement titre compétence*/
+	text-align: center;
+	align-content: center;
+}
+
+/*--------------------------------------------------------CSS de la page expériences-----------------------------------------------------------------*/
+
+#titre_experiences {
+	/*Alignement titre expérience*/
+	text-align: center;
+}
+
+/*--------------------------------------------------------CSS de la page loisirs---------------------------------------------------------------------*/

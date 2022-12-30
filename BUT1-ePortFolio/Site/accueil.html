@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Mon E-Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/stylecommun.css">
+	<link rel="stylesheet" type="text/css" href="css/stylepage.css">
+
+</head>
+
+<body>
+
+	<!--*********************************************************Début de la barre de navigation********************************************************-->
+
+	<nav>
+
+		<h1 id="eportfolio">Mon E-Portfolio</h1>
+		<div class="nav_barre">
+
+			<a href="accueil.html">Accueil</a>
+			<a href="#my_profil">Mon Profil</a>
+			<a href="competences.html">Mes Compétences</a>
+			<a href="experiences.html">Mes Expériences</a>
+			<a href="loisirs.html">Mes Loisirs</a>
+
+		</div>
+
+	</nav>
+
+	<!--*********************************************************Fin de la barre de navigation**********************************************************-->
+
+	<!--**************************************************************Début de l'entête*****************************************************************-->
+
+	<header>
+
+		<h1>Journal d'une parisienne ...</h1>
+		<h4>BENCE ALEXIA</h4>
+		<button>Parcourir</button>
+
+	</header>
+
+	<!--*****************************************************************Fin de l'entête****************************************************************-->
+
+	<!--*******************************************************Début de la section de Mon Profil********************************************************-->
+
+	<div id="my_profil">
+
+		<section class="text">
+
+			<div class="contenu">
+
+				<div class="encadre">
+
+					<div class="gauche">
+
+						<h1>Une jeune étudiante...</h1>
+						<p>Je m'appelle Alexia BENCE, j'ai 18 ans et je suis une jeune étudiante à l'IUT Paris Descartes
+							dans le 16 ème arrondissement de Paris.</p>
+
+					</div>
+
+					<div class="droite">
+
+						<img src="images/tour_eiffel.jpg" alt="tour_eiffel">
+
+					</div>
+
+				</div>
+				<div class="encadre">
+
+					<div class="gauche">
+
+						<h1>...très curieuse</h1>
+						<p>Ayant soif d'aventure, je ne cèsse de découvrir de nouvelles choses qui éveillent ma
+							curiosité. En découvrant mon site E-Portfolio, vous apprendrez à mieux me connaître, mes
+							aventures et moi.</p>
+
+					</div>
+
+					<div class="droite">
+
+						<img src="images/louvre.jpg" alt="louvre">
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+	</div>
+
+
+	<!--************************************************************Fin de la section de Mon Profil*****************************************************-->
+
+	<!--************************************************************Début menu déroulant profil*********************************************************-->
+
+	<div id="menu_deroulant">
+
+		<p>En quelques mots je suis :</p>
+
+		<select id="menu">
+
+			<option Selected="Selected">Cliquez ici</option>
+			<option>Curieuse</option>
+			<option>Motivée</option>
+			<option>Organisée</option>
+			<option>Créative</option>
+			<option>Inventive</option>
+			<option>Minutieuse</option>
+			<option>Souriante</option>
+
+		</select>
+	</div>
+
+	<!--************************************************************Fin menu déroulant profil***********************************************************-->
+
+	<!--***************************************************************Début du formulaire**************************************************************-->
+
+	<h3 id="titre_formulaire">Cliquez sur le bouton ci-dessous pour inscrire vos informations</h3>
+
+	<button class="OpenButton" onclick="OpenForm()">Inscrivez vos informations</button>
+
+	<div class="FormPopup" id="MyForm">
+		<form action="#" method="post" class="FormContainer">
+
+			<h1 id="informations_a_remplir">Informations à remplir</h1>
+			<fieldset>
+
+				<legend>Etat civil</legend>
+
+				<ul>
+					<li>
+						<label for="titre1">
+							<input type="radio" id="titre1" name="titre" value="M">Monsieur
+						</label>
+					</li>
+
+					<li>
+						<label for="titre1">
+							<input type="radio" id="titre2" name="titre" value="Mme">Madame
+						</label>
+					</li>
+				</ul>
+
+			</fieldset>
+
+			<p>
+
+				<label class="info_perso">Nom</label>
+				<input class="info_perso_input" type="text" id="name" name="NomDuClient">
+
+			</p>
+
+			<p>
+
+				<label class="info_perso">Prénom</label>
+				<input class="info_perso_input" type="text" id="name1" name="PrenomDuClient">
+
+			</p>
+
+			<label for="email">Email</label>
+			<input type="email" placeholder="Saisissez-votre email" name="email" required>
+
+			<label for="password">Mot de passe</label>
+			<input type="password" placeholder="Saisissez-votre mot de passe" name="mot de passe" required>
+
+			<p>
+
+				<label class="date_passage">Votre date de passage sur le site</label>
+				<input class="date_passage_input" type="date" id="date" name="DatePassage">
+
+			</p>
+
+			<button type="submit" class="btn">Validez vos informations</button>
+			<button type="button" class="btnAnnulation" onclick="CloseForm()">Annulation</button>
+
+		</form>
+
+		<script>
+
+			function OpenForm() {
+				document.getElementById("MyForm").style.display = "block";
+			}
+			function CloseForm() {
+				document.getElementById("MyForm").style.display = "none";
+			}
+
+		</script>
+
+	</div>
+
+	<!--***************************************************************Fin du formulaire****************************************************************-->
+
+	<!--**************************************************************Début du pied de page*************************************************************-->
+
+	<footer>
+
+		<h1>En savoir plus</h1>
+
+		<div class="savoir_plus">
+
+			<div class="savoir_plus_contenu">
+
+				<h3>Un projet</h3>
+				<p>Ce site internet est un projet pour l'IUT Paris Descartes en Développement web.</p>
+
+			</div>
+
+			<div class="savoir_plus_contenu">
+
+				<h3>Un progrès</h3>
+				<p>Faire ce site internet m'a permit de progresser dans le langage HTML et CSS et d'en apprendre
+					d'avantage sur le sujet.</p>
+
+			</div>
+
+			<div class="savoir_plus_contenu">
+
+				<h3>Un futur</h3>
+				<p>Ce site internet m'a donné envie de continuer sur cette progression et de continuer à découvrir cette
+					matière.</p>
+
+			</div>
+
+		</div>
+
+		<p id="contact">Contact : alexia.bence@etu.u-paris.fr | E-portfolio.</p>
+
+	</footer>
+
+	<!--***********************************************************Fin du pied de page******************************************************************-->
+
+</body>
+
+</html>
